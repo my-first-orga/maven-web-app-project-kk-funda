@@ -16,6 +16,7 @@
 		<url>http://kkfunda.com</url>
 	</organization>
 
+	/*
 	<properties>
 		<jdk.version>1.8</jdk.version>
 		<spring.version>5.3.34</spring.version>
@@ -27,7 +28,12 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-	</properties>
+	</properties> */
+	<properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+</properties>
+
 
 	<dependencies>
 		
@@ -134,6 +140,15 @@
 					</webApp>
 				</configuration>
 			</plugin>
+			
+			
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.1</version> <!-- Use the latest version -->
+    </plugin>
+		
+
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
